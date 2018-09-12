@@ -7,7 +7,7 @@ export const AppRoutes: Routes = [{
   path: '',
   component: AdminLayoutComponent,
   children: [{
-    path: '',
+    path: 'dashboard',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
   }, {
     path: 'email',
@@ -59,20 +59,25 @@ export const AppRoutes: Routes = [{
     loadChildren: './docs/docs.module#DocsModule'
   }]
 }, {
-  path: '',
+  path: 'admin',
   component: AuthLayoutComponent,
   children: [{
-    path: 'authentication',
+    path: '',
     loadChildren: './authentication/authentication.module#AuthenticationModule'
-  }, {
-    path: 'error',
-    loadChildren: './error/error.module#ErrorModule'
   }, {
     path: 'landing',
     loadChildren: './landing/landing.module#LandingModule'
   }]
 }, {
-  path: '**',
-  redirectTo: 'error/404'
+  path: '',
+  redirectTo: 'admin',
+  pathMatch: 'full',
+},
+{
+  path: 'error',
+  loadChildren: './error/error.module#ErrorModule'
+// }, {
+//   path: '**',
+//   redirectTo: 'error/404'
 }];
 

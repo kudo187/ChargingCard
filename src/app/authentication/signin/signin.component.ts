@@ -18,8 +18,9 @@ export class SigninComponent implements OnInit {
     } );
   }
 
-  onSubmit() {
-    this.router.navigate ( [ '/' ] );
+  onSubmit(form) {
+    this.router.navigate ( [ '/dashboard' ] );
+    console.log(form);
   }
 
 }
