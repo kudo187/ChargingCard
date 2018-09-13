@@ -2,12 +2,13 @@ import { Routes } from '@angular/router';
 
 import { AdminLayoutComponent } from './core';
 import { AuthLayoutComponent } from './core';
+import { SigninComponent } from './authentication/signin/signin.component';
 
 export const AppRoutes: Routes = [{
   path: '',
   component: AdminLayoutComponent,
   children: [{
-    path: 'dashboard',
+    path: '',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
   }, {
     path: 'email',
@@ -59,25 +60,20 @@ export const AppRoutes: Routes = [{
     loadChildren: './docs/docs.module#DocsModule'
   }]
 }, {
-  path: 'admin',
+  path: '',
   component: AuthLayoutComponent,
   children: [{
-    path: '',
-    loadChildren: './authentication/authentication.module#AuthenticationModule'
+    path: 'signin',
+    component: SigninComponent,
   }, {
-    path: 'landing',
-    loadChildren: './landing/landing.module#LandingModule'
+    path: 'error',
+    loadChildren: './error/error.module#ErrorModule'
   }]
 }, {
-  path: '',
-  redirectTo: 'admin',
-  pathMatch: 'full',
-},
-{
   path: 'error',
   loadChildren: './error/error.module#ErrorModule'
-// }, {
-//   path: '**',
-//   redirectTo: 'error/404'
+},{
+  path: '**',
+  redirectTo: 'error/404'
 }];
 

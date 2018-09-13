@@ -11,19 +11,15 @@ export const AuthenticationRoutes: Routes = [
     children: [{
       path: 'signin',
       component: SigninComponent
-    // }, {
-    //   path: 'signup',
-    //   component: SignupComponent
+    }, {
+      path: 'signup',
+      component: SignupComponent
     }, {
       path: 'forgot',
       component: ForgotComponent
     }, {
       path: 'lockscreen',
       component: LockscreenComponent
-    },{
-      path:'',
-      redirectTo: 'signin',
-      pathMatch: 'full'
     }]
   }
 ];

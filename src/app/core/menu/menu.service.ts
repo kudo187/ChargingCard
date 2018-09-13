@@ -22,35 +22,18 @@ export interface Menu {
 
 const MENUITEMS = [
   {
-    state: 'dashboard',
+    state: '/',
     name: 'HOME',
     type: 'link',
     icon: 'basic-accelerator'
   },
-  // {
-  //   state: 'email',
-  //   name: 'EMAIL',
-  //   type: 'link',
-  //   icon: 'basic-paperplane'
-  // },
   {
-    state: 'card',
-    name: 'Card manager',
-    type: 'sub',
-    icon: 'basic-smartphone',
-    children: [
-      {
-        state: 'list',
-        name: 'List'
-      },
-      {
-        state: 'add-new',
-        name: 'Add New'
-      }
-    ]
+    state: 'email',
+    name: 'EMAIL',
+    type: 'link',
+    icon: 'basic-paperplane'
   },
   {
-
     state: 'components',
     name: 'COMPONENTS',
     type: 'sub',
@@ -272,52 +255,52 @@ const MENUITEMS = [
       },
     ]
   },
-  // {
-  //   state: 'charts',
-  //   name: 'CHARTS',
-  //   type: 'sub',
-  //   icon: 'ecommerce-graph1',
-  //   badge: [
-  //     {
-  //       type: 'info',
-  //       value: '4'
-  //     }
-  //   ],
-  //   children: [
-  //     {
-  //       state: 'bar',
-  //       name: 'BAR'
-  //     },
-  //     {
-  //       state: 'pie',
-  //       name: 'PIE'
-  //     },
-  //     {
-  //       state: 'line',
-  //       name: 'LINE'
-  //     },
-  //     {
-  //       state: 'misc',
-  //       name: 'MISC'
-  //     }
-  //   ]
-  // },
-  // {
-  //   state: 'maps',
-  //   name: 'MAPS',
-  //   type: 'sub',
-  //   icon: 'basic-geolocalize-01',
-  //   children: [
-  //     {
-  //       state: 'google',
-  //       name: 'GOOGLE'
-  //     },
-  //     {
-  //       state: 'fullscreen',
-  //       name: 'FULLSCREEN'
-  //     }
-  //   ]
-  // },
+  {
+    state: 'charts',
+    name: 'CHARTS',
+    type: 'sub',
+    icon: 'ecommerce-graph1',
+    badge: [
+      {
+        type: 'info',
+        value: '4'
+      }
+    ],
+    children: [
+      {
+        state: 'bar',
+        name: 'BAR'
+      },
+      {
+        state: 'pie',
+        name: 'PIE'
+      },
+      {
+        state: 'line',
+        name: 'LINE'
+      },
+      {
+        state: 'misc',
+        name: 'MISC'
+      }
+    ]
+  },
+  {
+    state: 'maps',
+    name: 'MAPS',
+    type: 'sub',
+    icon: 'basic-geolocalize-01',
+    children: [
+      {
+        state: 'google',
+        name: 'GOOGLE'
+      },
+      {
+        state: 'fullscreen',
+        name: 'FULLSCREEN'
+      }
+    ]
+  },
   {
     state: 'pages',
     name: 'PAGES',
@@ -350,56 +333,56 @@ const MENUITEMS = [
       }
     ]
   },
-  // {
-  //   state: 'landing',
-  //   name: 'LANDING',
-  //   type: 'link',
-  //   icon: 'basic-spread'
-  // },
-  // {
-  //   state: 'admin',
-  //   name: 'AUTHENTICATION',
-  //   type: 'sub',
-  //   icon: 'basic-lock-open',
-  //   children: [
-  //     {
-  //       state: 'signin',
-  //       name: 'SIGNIN'
-  //     },
-  //     {
-  //       state: 'signup',
-  //       name: 'SIGNUP'
-  //     },
-  //     {
-  //       state: 'forgot',
-  //       name: 'FORGOT'
-  //     },
-  //     {
-  //       state: 'lockscreen',
-  //       name: 'LOCKSCREEN'
-  //     },
-  //   ]
-  // },
-  // {
-  //   state: 'error',
-  //   name: 'ERROR',
-  //   type: 'sub',
-  //   icon: 'basic-ban',
-  //   children: [
-  //     {
-  //       state: '404',
-  //       name: '404'
-  //     },
-  //     {
-  //       state: '500',
-  //       name: '500'
-  //     },
-  //     {
-  //       state: '503',
-  //       name: '503'
-  //     }
-  //   ]
-  // },
+  {
+    state: 'landing',
+    name: 'LANDING',
+    type: 'link',
+    icon: 'basic-spread'
+  },
+  {
+    state: 'authentication',
+    name: 'AUTHENTICATION',
+    type: 'sub',
+    icon: 'basic-lock-open',
+    children: [
+      {
+        state: 'signin',
+        name: 'SIGNIN'
+      },
+      {
+        state: 'signup',
+        name: 'SIGNUP'
+      },
+      {
+        state: 'forgot',
+        name: 'FORGOT'
+      },
+      {
+        state: 'lockscreen',
+        name: 'LOCKSCREEN'
+      },
+    ]
+  },
+  {
+    state: 'error',
+    name: 'ERROR',
+    type: 'sub',
+    icon: 'basic-ban',
+    children: [
+      {
+        state: '404',
+        name: '404'
+      },
+      {
+        state: '500',
+        name: '500'
+      },
+      {
+        state: '503',
+        name: '503'
+      }
+    ]
+  },
   {
     state: 'calendar',
     name: 'CALENDAR',
