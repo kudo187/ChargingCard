@@ -17,7 +17,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
     SidebarComponent,
     FooterComponent,
     DashboardComponent,
-    DashboardHomeComponent
+    DashboardHomeComponent,
+    
   ]
 })
 export class DashboardModule { }
