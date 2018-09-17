@@ -63,6 +63,7 @@ export const AppRoutes: Routes = [{
   path: '',
   component: AuthLayoutComponent,
   children: [{
+<<<<<<< HEAD
     path: 'signin',
     component: SigninComponent,
   }, {
@@ -73,6 +74,18 @@ export const AppRoutes: Routes = [{
   path: 'error',
   loadChildren: './error/error.module#ErrorModule'
 },{
+=======
+    path: 'authentication',
+    loadChildren: './authentication/authentication.module#AuthenticationModule'
+  }, {
+    path: 'error',
+    loadChildren: './error/error.module#ErrorModule'
+  }, {
+    path: 'landing',
+    loadChildren: './landing/landing.module#LandingModule'
+  }]
+}, {
+>>>>>>> parent of 80ffe36... zzz
   path: '**',
   redirectTo: 'error/404'
 }];
