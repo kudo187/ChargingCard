@@ -1,61 +1,21 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { JsonpModule } from '@angular/http';
-
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { ComponentsRoutes } from './components.routing';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { ProgressComponent } from './progress/progress.component';
-import { PaginationComponent } from './pagination/pagination.component';
-import { SpinnersComponent } from './spinners/spinners.component';
-import { AccordionComponent } from './accordion/accordion.component';
-import { AlertComponent } from './alert/alert.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CollapseComponent } from './collapse/collapse.component';
-import { DatepickerComponent } from './datepicker/datepicker.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
-import { ModalComponent } from './modal/modal.component';
-import { PopoverComponent } from './popover/popover.component';
-import { RatingComponent } from './rating/rating.component';
-import { TabsComponent } from './tabs/tabs.component';
-import { TimepickerComponent } from './timepicker/timepicker.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
-import { TypeaheadComponent } from './typeahead/typeahead.component';
-import { ButtonIconsComponent } from './button-icons/button-icons.component';
+import { GridsComponent } from './grids/grids.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { IconsComponent } from './icons/icons.component';
+import { TypographyComponent } from './typography/typography.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { PanelsComponent } from './panels/panels.component';
+import { ComponentsRoutingModule } from './components-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(ComponentsRoutes),
-    FormsModule,
-    ReactiveFormsModule,
-    JsonpModule,
-    NgbModule
+    ComponentsRoutingModule,
+    ReactiveFormsModule
   ],
-  declarations: [
-    ButtonsComponent,
-    ProgressComponent,
-    PaginationComponent,
-    SpinnersComponent,
-    AccordionComponent,
-    AlertComponent,
-    CarouselComponent,
-    CollapseComponent,
-    DatepickerComponent,
-    DropdownComponent,
-    ModalComponent,
-    PopoverComponent,
-    RatingComponent,
-    TabsComponent,
-    TimepickerComponent,
-    TooltipComponent,
-    TypeaheadComponent,
-    ButtonIconsComponent
-  ]
+  declarations: [ButtonsComponent, GridsComponent, NotificationsComponent, IconsComponent, TypographyComponent, AlertsComponent, PanelsComponent]
 })
-
-export class ComponentsModule {}
-
+export class ComponentsModule { }

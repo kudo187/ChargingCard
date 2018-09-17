@@ -1,15 +1,23 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
-import { NgxChartsModule } from '@swimlane/ngx-charts';
-
 import { DashboardComponent } from './dashboard.component';
-import { DashboardRoutes } from './dashboard.routing';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+import { FooterComponent } from '../footer/footer.component';
+import { DashboardHomeComponent } from '../dashboard-home/dashboard-home.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(DashboardRoutes), NgxChartsModule],
-  declarations: [DashboardComponent]
+  imports: [
+    CommonModule,
+    DashboardRoutingModule
+  ],
+  declarations: [
+    NavbarComponent,
+    SidebarComponent,
+    FooterComponent,
+    DashboardComponent,
+    DashboardHomeComponent
+  ]
 })
-
-export class DashboardModule {}
+export class DashboardModule { }

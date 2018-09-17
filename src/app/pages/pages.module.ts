@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
-import { PagesRoutes } from './pages.routing';
-import { InvoiceComponent } from './invoice/invoice.component';
-import { TimelineComponent } from './timeline/timeline.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { ForumComponent } from './forum/forum.component';
-import { ActivtyComponent } from './activty/activty.component';
-import { BlankComponent } from './blank/blank.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthComponent } from './auth/auth.component';
+import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(PagesRoutes)
+    PagesRoutingModule
   ],
-  declarations: [InvoiceComponent, TimelineComponent, PricingComponent, ForumComponent, ActivtyComponent, BlankComponent]
+  declarations: [NotFoundComponent, AuthComponent]
 })
-
-export class PagesModule {}
+export class PagesModule { }

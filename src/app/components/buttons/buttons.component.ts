@@ -6,10 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./buttons.component.scss']
 })
 export class ButtonsComponent {
-  radioModel = 1;
-  checkboxModel = {
-    left: true,
-    middle: false,
-    right: false
-  };
+  paginationPage = 1;
+
+  incPage() {
+    if (this.paginationPage < 5) { this.paginationPage++; }
+  }
+
+  decPage() {
+    if (this.paginationPage > 1) {
+      this.paginationPage--;
+    }
+  }
+
+  goToPage(number) {
+    this.paginationPage = number;
+  }
 }

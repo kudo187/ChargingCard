@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
+import { MapsComponent } from './maps.component';
+import { RouterModule, Routes } from '@angular/router';
 import { AgmCoreModule } from '@agm/core';
 
-import { MapsRoutes } from './maps.routing';
-import { GoogleComponent } from './google/google.component';
-import { FullscreenComponent } from './fullscreen/fullscreen.component';
+
+const routes: Routes = [
+  { path: '', component: MapsComponent }
+];
+
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(MapsRoutes),
-    AgmCoreModule
+    AgmCoreModule.forRoot({
+      apiKey: 'your-api-key'
+    }),
+    RouterModule.forChild(routes)
   ],
-  declarations: [
-    GoogleComponent,
-    FullscreenComponent
-  ]
+  declarations: [MapsComponent]
 })
-
-export class MapsModule {}
+export class MapsModule { }

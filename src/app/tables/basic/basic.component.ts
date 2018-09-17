@@ -3,6 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-basic',
   templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.scss']
+  styles: ['.table{margin: 0;}']
 })
-export class BasicComponent { }
+export class BasicComponent {
+
+  defaultTable = {
+    head: ['#', 'First', 'Last', 'Handle'],
+    body: [
+      ['Mark', 'Otto', '@mdo'],
+      ['Jacob', 'Thornton', '@fat'],
+      ['Larry', 'the Bird', '@twitter']
+    ]
+  };
+}

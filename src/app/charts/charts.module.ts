@@ -1,27 +1,22 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ChartsComponent } from './charts.component';
+import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+const routes: Routes = [
+  { path: '', component: ChartsComponent }
+];
 
-import { ChartsRoutes } from './charts.routing';
-import { BarComponent } from './bar/bar.component';
-import { PieComponent } from './pie/pie.component';
-import { LineComponent } from './line/line.component';
-import { MiscComponent } from './misc/misc.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(ChartsRoutes),
-    NgxChartsModule
+    FormsModule,
+    NgSelectModule,
+    RouterModule.forChild(routes)
   ],
-  declarations: [
-    BarComponent,
-    PieComponent,
-    LineComponent,
-    MiscComponent
-  ]
+  declarations: [ChartsComponent]
 })
-
-export class ChartsModule {}
+export class ChartsModule { }

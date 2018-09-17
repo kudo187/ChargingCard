@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
-import { TablesRoutes } from './tables.routing';
+import { Routes, RouterModule } from '@angular/router';
 import { BasicComponent } from './basic/basic.component';
-import { ResponsiveComponent } from './responsive/responsive.component';
+import { SmartComponent } from './smart/smart.component';
+import { DataTablesModule } from 'angular-datatables';
+
+
+const routes: Routes = [
+  { path: 'basic', component: BasicComponent },
+  { path: 'smart', component: SmartComponent }
+];
+
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(TablesRoutes)
+    DataTablesModule,
+    RouterModule.forChild(routes)
   ],
-  declarations: [BasicComponent, ResponsiveComponent]
+  declarations: [BasicComponent,SmartComponent]
 })
-
-export class TablesModule {}
+export class TablesModule { }
