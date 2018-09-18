@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './auth/auth.component';
+// import { AuthComponent } from './auth/auth.component';
 import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
@@ -8,6 +8,6 @@ import { PagesRoutingModule } from './pages-routing.module';
     CommonModule,
     PagesRoutingModule
   ],
-  declarations: [ AuthComponent]
+  declarations: [ ]
 })
 export class PagesModule { }

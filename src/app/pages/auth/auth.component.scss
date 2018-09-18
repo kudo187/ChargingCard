@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.header{
+.header-login{
   position: absolute;
   top: 0;
   left: 0;
@@ -145,7 +145,7 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .header{
+  .header-login{
     .btn{
       margin: 1rem;
     }

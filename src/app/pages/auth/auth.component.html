@@ -1,5 +1,5 @@
 <div class="auth">
-  <div class="header">
+  <div class="header-login">
     <button class=" btn  btn-just-icon btn-round" type="submit" [routerLink]="'/'">
       <i class="material-icons">home</i>
     </button>
@@ -27,10 +27,12 @@
           <h2 class="mb-4 text-success">Login</h2>
           <form>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email" required autofocus />
+              <label for="email">Username/Email:</label>
+              <input type="email" class="form-control" placeholder="Email *" required autofocus />
             </div>
             <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password" required />
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" placeholder="Password *" required />
             </div>
             <div class="form-group">
               <button type="submit" class="btn px-4 btn-outline-success">Log In</button>
@@ -39,7 +41,7 @@
         </div>
       </div>
       <!-- sign up form -->
-      <div class="auth-signup">
+      <div class="auth-signup" style="overflow: scroll">
         <div class="wrapper">
           <h2 class="mb-4 text-success">Sign Up</h2>
           <form class="forms_form">
@@ -50,8 +52,15 @@
               <input type="email" placeholder="Email" class="form-control" required />
             </div>
             <div class="form-group">
+              <label for="password">Password:</label>
               <input type="password" placeholder="Password" class="form-control" required />
             </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control" required />
+              </div>
+              <div class="form-group">
+                  <input type="password" placeholder="Password" class="form-control" required />
+                </div>
             <div class="form-group">
               <button type="submit" class="btn btn-outline-success px-4">Sign Up</button>
             </div>

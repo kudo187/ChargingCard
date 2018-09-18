@@ -7,6 +7,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './client/header/header.component';
 import { FooterComponent } from './client/footer/footer.component';
 import { HomeComponent } from './client/home/home.component';
+import { AuthComponent } from './pages/auth/auth.component';
 // import { NotificationsModule } from 'projects/angular6-notifications/src/public_api';
 
 
@@ -16,7 +17,8 @@ import { HomeComponent } from './client/home/home.component';
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
