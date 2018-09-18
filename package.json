@@ -43,6 +43,7 @@
     "moment": "^2.9.0",
     "ng2-flatpickr": "^6.0.2",
     "ngx-chips": "^1.9.3",
+    "node": "^10.10.0",
     "nouislider": "^11.1.0",
     "nprogress": "^0.2.0",
     "popper.js": "^1.14.3",

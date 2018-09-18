@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { HeaderComponent } from './client/header/header.component';
+import { HomeComponent } from './client/home/home.component';
 
 const routes: Routes = [
-  {path: 'home', component:HeaderComponent},
+  {path: 'home', component: HomeComponent},
   { path: 'admin', loadChildren: './dashboard/dashboard.module#DashboardModule' },
   { path: 'admin-login', loadChildren: './pages/pages.module#PagesModule' },
-  { path: '', redirectTo: 'admin', pathMatch: 'full'},
+  { path: '', component: HomeComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
