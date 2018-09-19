@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -12,4 +13,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  developmentClick(){
+    swal({
+      type: 'warning',
+      title: 'Dịch vụ đang phát triên...',
+      text: '!!!',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  }
 }

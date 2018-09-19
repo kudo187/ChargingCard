@@ -8,6 +8,7 @@ import { HeaderComponent } from './client/header/header.component';
 import { FooterComponent } from './client/footer/footer.component';
 import { HomeComponent } from './client/home/home.component';
 import { AuthComponent } from './pages/auth/auth.component';
+import { ManageCardComponent } from './client/manage-card/manage-card.component';
 // import { NotificationsModule } from 'projects/angular6-notifications/src/public_api';
 
 
@@ -18,7 +19,8 @@ import { AuthComponent } from './pages/auth/auth.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AuthComponent
+    AuthComponent,
+    ManageCardComponent
   ],
   imports: [
     BrowserModule,

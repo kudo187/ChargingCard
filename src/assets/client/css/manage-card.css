@@ -1,0 +1,787 @@
+/* LuanNC added */
+
+@import url('../fonts/css/font-awesome.min.css');
+
+
+
+
+
+/* LuanNC added */
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url(../fonts/Roboto-Light.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #343434;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+a:hover {
+    outline: none;
+    color: #e02729;
+}
+
+a:hover img {
+    cursor: pointer;
+    -webkit-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+a:focus {
+    outline: none;
+}
+
+
+/* ==============================
+ *  SideBar Left
+ * ============================*/
+
+
+
+#cssmenu .spriteAccountInfo {
+    background: url(../images/sprite-account-info.png);
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#cssmenu .spriteAccountInfo.info {
+    width: 19px;
+    height: 15px;
+    background-position: 0 0;
+}
+
+#cssmenu .active .spriteAccountInfo.info,
+#cssmenu .open .spriteAccountInfo.info,
+#cssmenu a:hover .spriteAccountInfo.info {
+    background-position: -26px 0;
+}
+
+#cssmenu .spriteAccountInfo.transfer {
+    width: 19px;
+    height: 17px;
+    background-position: 0 -45px;
+}
+
+#cssmenu .active .spriteAccountInfo.transfer,
+#cssmenu .open .spriteAccountInfo.transfer,
+#cssmenu a:hover .spriteAccountInfo.transfer {
+    background-position: -26px -45px;
+}
+
+#cssmenu .spriteAccountInfo.security {
+    width: 15px;
+    height: 18px;
+    background-position: -1px -91px;
+}
+
+#cssmenu .active .spriteAccountInfo.security,
+#cssmenu .open .spriteAccountInfo.security,
+#cssmenu a:hover .spriteAccountInfo.security {
+    background-position: -27px -91px;
+}
+
+#cssmenu .spriteAccountInfo.alarm {
+    width: 15px;
+    height: 18px;
+    background-position: -2px -114px;
+}
+
+#cssmenu .active .spriteAccountInfo.alarm,
+#cssmenu .open .spriteAccountInfo.alarm,
+#cssmenu a:hover .spriteAccountInfo.alarm {
+    background-position: -30px -114px;
+}
+
+#cssmenu .spriteAccountInfo.support {
+    width: 17px;
+    height: 18px;
+    background-position: 0 -167px;
+}
+
+#cssmenu .active .spriteAccountInfo.support,
+#cssmenu .open .spriteAccountInfo.support,
+#cssmenu a:hover .spriteAccountInfo.support {
+    background-position: -28px -167px;
+}
+
+#cssmenu .spriteAccountInfo.transfersime {
+    width: 19px;
+    height: 17px;
+    background-position: 0 -45px;
+}
+
+#cssmenu .active .spriteAccountInfo.transfersime,
+#cssmenu .open .spriteAccountInfo.transfersime,
+#cssmenu a:hover .spriteAccountInfo.transfersime {
+    background-position: -26px -45px;
+}
+
+
+.sprite2 {
+    background: url(../images/sprite2.png);
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#cssmenu .sprite2.g {
+    width: 16px;
+    height: 18px;
+    background-position: -2px -42px;
+}
+
+#cssmenu .active .sprite2.g,
+#cssmenu .open .sprite2.g,
+#cssmenu a:hover .sprite2.g {
+    background-position: -34px -42px;
+}
+
+#cssmenu .sprite2.share {
+    width: 18px;
+    height: 18px;
+    background-position: -2px 0;
+}
+
+#cssmenu .active .sprite2.share,
+#cssmenu .open .sprite2.share,
+#cssmenu a:hover .sprite2.share {
+    background-position: -32px 0;
+}
+
+#cssmenu .sprite2.card {
+    width: 20px;
+    height: 18px;
+    background-position: 0 -92px;
+}
+
+#cssmenu .active .sprite2.card,
+#cssmenu .open .sprite2.card,
+#cssmenu a:hover .sprite2.card {
+    background-position: -30px -92px;
+}
+
+#cssmenu .sprite2.phone {
+    width: 20px;
+    height: 21px;
+    background-position: -3px -137px;
+}
+
+.pay-bill .pay-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    background: url(../images/bill.png) center no-repeat;
+}
+
+.pay-bill.active .pay-icon {
+    background-image: url(../images/bill-white.png);
+}
+
+#cssmenu>ul>.pay-bill.active>a,
+#cssmenu>ul>.pay-bill.open>a {
+    background-color: #f0970a;
+    color: #fff;
+}
+
+#cssmenu>ul>.pay-bill.active>li a,
+#cssmenu>ul>.pay-bill.open>li a {
+    background-color: #fff;
+    color: #343434;
+}
+
+#cssmenu>ul>.pay-bill.active>li a:hover,
+#cssmenu>ul>.pay-bill.active>li a.active,
+#cssmenu>ul>.pay-bill.open>li a:hover,
+#cssmenu>ul>.pay-bill.open>li a.active {
+    background-color: #D7F5FF;
+    color: #e02729;
+}
+
+#cssmenu .active .sprite2.phone,
+#cssmenu .open .sprite2.phone,
+#cssmenu a:hover .sprite2.phone {
+    background-position: -77px -137px;
+}
+
+#cssmenu .sprite2.game {
+    width: 20px;
+    height: 14px;
+    background-position: 0 -190px;
+}
+
+#cssmenu .active .sprite2.game,
+#cssmenu .open .sprite2.game,
+#cssmenu a:hover .sprite2.game {
+    background-position: -30px -190px;
+}
+
+#cssmenu .sprite2.payment {
+    width: 18px;
+    height: 18px;
+    background-position: -1px -233px;
+}
+
+#cssmenu .active .sprite2.payment,
+#cssmenu .open .sprite2.payment,
+#cssmenu a:hover .sprite2.payment {
+    background-position: -32px -233px;
+}
+
+#cssmenu .sprite2.screen {
+    width: 18px;
+    height: 16px;
+    background-position: -2px -283px;
+}
+
+#cssmenu .active .sprite2.screen,
+#cssmenu .open .sprite2.screen,
+#cssmenu a:hover .sprite2.screen {
+    background-position: -32px -283px;
+}
+
+#cssmenu .sprite2.other {
+    width: 18px;
+    height: 18px;
+    background-position: -2px -329px;
+}
+
+#cssmenu .active .sprite2.other,
+#cssmenu .open .sprite2.other,
+#cssmenu a:hover .sprite2.other {
+    background-position: -32px -329px;
+}
+
+.sprite2.delete {
+    width: 14px;
+    height: 17px;
+    background-position: 0 -353px;
+    -webkit-transition-property: none;
+    transition-property: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.sprite2.delete:hover {
+    background-position: -36px -353px;
+}
+
+#cssmenu .has-sub li:hover a,
+#cssmenu .has-sub .active a {
+    background: transparent;
+}
+
+#cssmenu .open ul {
+    display: block;
+}
+
+#cssmenu .bgColor>li>a:hover,
+#cssmenu .bgColor>li.active>a,
+#cssmenu .bgColor>li.open>a {
+    color: #fff;
+}
+
+#cssmenu .bgColor>li>ul>li>a:hover {
+    background-color: #ECFAFF;
+}
+
+#cssmenu .bgColor>li>ul>li>a.active {
+    background-color: #D7F5FF;
+}
+
+#cssmenu .bcColor>li>a:hover,
+#cssmenu .bgColor>li.active>a,
+#cssmenu .bgColor>li.open>a {
+    color: #fff;
+}
+
+#cssmenu .bcColor>li>ul>li>a.active {
+    color: #e02729;
+}
+
+#cssmenu .doanhThuBg>a:hover,
+#cssmenu .doanhThuBg.active>a,
+#cssmenu .doanhThuBg.open>a {
+    background-color: #5160b1;
+}
+
+#cssmenu .theGameBg>a:hover,
+#cssmenu .theGameBg.active>a,
+#cssmenu .theGameBg.open>a {
+    background-color: #9acf61;
+}
+
+#cssmenu .theDienThoaiBg>a:hover,
+#cssmenu .theDienThoaiBg.active>a,
+#cssmenu .theDienThoaiBg.open>a {
+    background-color: #a1538c;
+}
+
+#cssmenu .tienDienThoaiBg>a:hover,
+#cssmenu .tienDienThoaiBg.active>a,
+#cssmenu .tienDienThoaiBg.open>a {
+    background-color: #47c2ca;
+}
+
+#cssmenu .tienGameBg>a:hover,
+#cssmenu .tienGameBg.active>a,
+#cssmenu .tienGameBg.open>a {
+    background-color: #626262;
+}
+
+#cssmenu .hoaDonBg>a:hover,
+#cssmenu .hoaDonBg.active>a,
+#cssmenu .hoaDonBg.open>a {
+    background-color: #f0970a;
+}
+
+#cssmenu .thanhToanBg>a:hover,
+#cssmenu .thanhToanBg.active>a,
+#cssmenu .thanhToanBg.open>a {
+    background-color: #04abef;
+}
+
+#cssmenu .dichVuKhacBg>a:hover,
+#cssmenu .dichVuKhacBg.active>a,
+#cssmenu .dichVuKhacBg.open>a {
+    background-color: #507f74;
+}
+
+#cssmenu .transfersim>a:hover,
+#cssmenu .transfersim.active>a,
+#cssmenu .transfersim.open>a {
+    background-color: #229035;
+}
+
+
+.sprite3 {
+    background: url(../images/sprite3.png);
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#cssmenu .sprite3.card {
+    width: 20px;
+    height: 18px;
+    background-position: -1px -7px;
+}
+
+#cssmenu .active .sprite3.card,
+#cssmenu .open .sprite3.card,
+#cssmenu a:hover .sprite3.card {
+    background-position: 21px -7px;
+}
+
+#cssmenu .sprite3.check {
+    width: 18px;
+    height: 18px;
+    background-position: -1px -57px;
+}
+
+#cssmenu .active .sprite3.check,
+#cssmenu .open .sprite3.check,
+#cssmenu a:hover .sprite3.check {
+    background-position: -31px -57px;
+}
+
+#cssmenu .sprite3.book {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -106px;
+}
+
+#cssmenu .active .sprite3.book,
+#cssmenu .open .sprite3.book,
+#cssmenu a:hover .sprite3.book {
+    background-position: -31px -106px;
+}
+
+#cssmenu .sprite3.history {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -152px;
+}
+
+#cssmenu .active .sprite3.history,
+#cssmenu .open .sprite3.history,
+#cssmenu a:hover .sprite3.history {
+    background-position: -31px -152px;
+}
+
+#cssmenu .sprite3.chart {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -190px;
+}
+
+#cssmenu .active .sprite3.chart,
+#cssmenu .open .sprite3.chart,
+#cssmenu a:hover .sprite3.chart {
+    background-position: -31px -190px;
+}
+
+#cssmenu .sprite3.report {
+    width: 16px;
+    height: 18px;
+    background-position: -1px -237px;
+}
+
+#cssmenu .active .sprite3.report,
+#cssmenu .open .sprite3.report,
+#cssmenu a:hover .sprite3.report {
+    background-position: -33px -237px;
+}
+
+#cssmenu .sprite3.stats {
+    width: 18px;
+    height: 17px;
+    background-position: 0 -282px;
+}
+
+#cssmenu .active .sprite3.stats,
+#cssmenu .open .sprite3.stats,
+#cssmenu a:hover .sprite3.stats {
+    background-position: -31px -282px;
+}
+
+.buy-card-types .card-icon {
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/buy-cart.png) center no-repeat;
+    margin-right: 5px;
+}
+
+#cssmenu ul li.buy-card-types.active a {
+    background-color: #0ac7af;
+    color: #fff;
+}
+
+.buy-card-types.active .card-icon {
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/buy-cart-white.png) center no-repeat;
+}
+
+.SideBarLeft {
+    font-family: "roboto-light";
+}
+
+#cssmenu {
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+}
+
+#cssmenu>ul>li:last-child>a {
+    border-bottom: 0;
+}
+
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+
+    display: block;
+    position: relative;
+}
+
+#cssmenu {
+    width: 100%;
+    display: block;
+}
+
+#cssmenu ul ul {
+    display: none;
+}
+
+.align-right {
+    float: right;
+}
+
+#cssmenu>ul>li>a {
+    padding: 14px 14px;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    z-index: 2;
+    text-decoration: none;
+    background: #f9f9f9;
+    text-transform: uppercase;
+    color: #262626;
+}
+
+#cssmenu>ul>li>a:hover,
+#cssmenu>ul>li.active>a,
+#cssmenu>ul>li.open>a {
+    color: #e02729;
+    background: #f1f1f1;
+}
+
+.holder {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.holder::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    right: 12px;
+    z-index: 10;
+    top: 18px;
+    border-left: 5px solid #606060;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+
+/* #cssmenu > ul > li.active > a > span::after, */
+
+#cssmenu>ul>li.open>a>span::after {
+    top: 22px;
+    border-top: 5px solid #606060;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+#cssmenu>ul>li.open[class*='Bg']>a>span::after {
+    border-top: 5px solid #fff !important;
+}
+
+#cssmenu ul ul li a {
+    cursor: pointer;
+    line-height: 1.4;
+    padding: 15px 10px 15px 30px;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: none;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#cssmenu ul ul li a.active {
+    color: #e02729;
+}
+
+#cssmenu ul ul li:hover>a,
+#cssmenu ul ul li.open>a,
+#cssmenu ul ul li.active>a {
+    background: #eeeeee;
+    color: #e02729;
+}
+
+#cssmenu ul ul li:first-child>a {
+    box-shadow: none;
+}
+
+#cssmenu>ul>li>ul>li.open:last-child>ul>li:last-child>a {
+    border-bottom: 0;
+}
+
+#cssmenu ul ul li.has-sub>a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    right: 20px;
+    z-index: 10;
+    top: 11.5px;
+    border-top: 2px solid #444;
+    border-left: 2px solid #444;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#cssmenu ul ul li.active>a::after,
+#cssmenu ul ul li.open>a::after,
+#cssmenu ul ul li>a:hover::after {
+    border-color: #ffffff;
+}
+
+.MainContent {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    min-height: 450px;
+}
+
+
+/*Sidebar support*/
+
+
+.ib {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+}
+
+
+
+#fixedSupport {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    z-index: 9;
+}
+
+#fixedSupport a {
+    text-decoration: none;
+}
+
+#fixedSupport ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    border: 1px solid #ececec;
+    background-color: #f3f3f3;
+}
+
+#fixedSupport .lbl {
+    display: block;
+    margin-top: 5px;
+}
+
+#fixedSupport .item {
+    display: block;
+    padding: 8px 7px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#fixedSupport li:last-child a {
+    border-bottom: 0;
+}
+
+#fixedSupport .item.active {
+    background-color: #e02729;
+    color: #fff;
+}
+
+#fixedSupport .sprite {
+    background: url(../images/sprite-fixed-support.png);
+}
+
+#fixedSupport .sprite.register {
+    width: 26px;
+    height: 27px;
+    background-position: 0 0;
+}
+
+#fixedSupport .sprite.recharge {
+    width: 27px;
+    height: 27px;
+    background-position: -1px -58px;
+}
+
+#fixedSupport .sprite.support {
+    width: 21px;
+    height: 21px;
+    background-position: -1px -119px;
+}
+
+#fixedSupport .sprite.feedback {
+    width: 23px;
+    height: 15px;
+    background-position: 0px -185px;
+}
+
+#fixedSupport .sprite.yahoo {
+    width: 23px;
+    height: 25px;
+    background-position: -1px -246px;
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    #fixedSupport {
+        display: none;
+    }
+    .support-left {
+        display: none;
+    }
+}
+
+
+/* Custom Screen Width change by Case*/
+
+.support-left {
+    background: url(../images/cskh.png) no-repeat left top;
+    height: 79px;
+    padding-top: 15px;
+}
+
+.support-left p {
+    text-transform: uppercase;
+    padding-left: 60px;
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+
+.support-left .mobile {
+    font-size: 24px;
+}
+
+
+/*Block content*/
+
+.blockContent {
+    margin-bottom: 70px;
+    font-family: "roboto-light";
+}
+.blockContent h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ececec;
+  line-height: 30px;
+}
+.blockContent h3 span {
+  border-bottom: 2px solid #e02729;
+  padding: 10px 0px 5px;
+}
