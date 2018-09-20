@@ -11,7 +11,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { ManageCardComponent } from './client/manage-card/manage-card.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { NotificationsModule } from 'projects/angular6-notifications/src/public_api';
-
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    OwlModule
     // NotificationsModule,
   ],
   providers: [],

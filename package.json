@@ -46,11 +46,13 @@
     "moment": "^2.9.0",
     "ng2-flatpickr": "^6.0.2",
     "ngx-chips": "^1.9.3",
+    "ngx-owl-carousel": "^2.0.7",
     "node": "^10.10.0",
     "nouislider": "^11.1.0",
     "nprogress": "^0.2.0",
     "popper.js": "^1.14.3",
     "rxjs": "^6.3.2",
+    "script-loader": "^0.7.2",
     "sweetalert2": "^7.26.29",
     "zone.js": "^0.8.26"
   },

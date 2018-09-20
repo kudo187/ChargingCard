@@ -1,8 +1,26 @@
 <app-header></app-header>
 
 <!-- Slider -->
-<!-- <div class="container"> -->
-<div class="main_slider" style="background-image:url(../../../assets/client/images/slide.jpg)">
+<!-- <div class="container "> -->
+    <owl-carousel [options]="{items: 1, loop:true,
+      margin:0, autoplay:true, autoplayTimeout:7000, nav:true, dots:true, navText: false}" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+        <div class="item-slide">
+          <a href="#">
+            <img class="img-responsive"  height="900px" src="../../../assets/client/images/slide4.jpg">
+          </a>
+        </div>
+        <div class="item-slide">
+          <a href="#">
+            <img class="img-responsive" height="900px" src="../../../assets/client/images/slide5.jpg">
+          </a>
+        </div>
+        <div class="item-slide">
+            <a href="#">
+              <img class="img-responsive" height="900px" src="../../../assets/client/images/slide3.jpg">
+            </a>
+          </div>
+      </owl-carousel>
+<!-- <div class="main_slider" style="background-image:url(../../../assets/client/images/slide.jpg)">
   <div class="container fill_height">
     <div class="row align-items-center fill_height">
       <div class="col">
@@ -13,13 +31,13 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- </div> -->
 
 <!-- Banner -->
 <div class="banner">
   <div class="wrapper">
-    <a href="manage-card" class="one">
+    <a routerLink="manage-card" class="one">
       <img src="../../../assets/client/images/icon3.png" height="51" width="51" alt="" class="img-responsive center-block" /><br>
       <span>Mua mã thẻ điện thoại</span>
     </a>
@@ -29,13 +47,13 @@
       <p>Mọi thao tác đăng nhập vào hệ thống đều sử dụng tiêu chuẩn bảo mật thông qua mã xác minh 1 lần được gửi qua SMS.
       </p>
     </a>
-    <a href="manage-card" class="three">
+    <a routerLink="manage-card" class="three">
       <img src="../../../assets/client/images/icon9.png" height="51" width="51" alt="" class="img-responsive center-block" /><br> Thanh toán hóa đơn
     </a>
     <a  class="four" (click)="developmentClick()">
       <img src="../../../assets/client/images/icon8.png"  height="51" width="51" alt="" class="img-responsive center-block" />
     </a>
-    <a href="manage-card" class="five">
+    <a routerLink="manage-card" class="five">
       <img src="../../../assets/client/images/icon6.png" height="51" width="51" alt="" class="img-responsive center-block" /><br> Bán mã thẻ điện thoại
     </a>
     <!-- <div class="col-md-4">
