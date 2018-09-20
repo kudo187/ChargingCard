@@ -9,6 +9,7 @@ import { FooterComponent } from './client/footer/footer.component';
 import { HomeComponent } from './client/home/home.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { ManageCardComponent } from './client/manage-card/manage-card.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { NotificationsModule } from 'projects/angular6-notifications/src/public_api';
 
 
@@ -20,12 +21,13 @@ import { ManageCardComponent } from './client/manage-card/manage-card.component'
     FooterComponent,
     HomeComponent,
     AuthComponent,
-    ManageCardComponent
+    ManageCardComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MDBBootstrapModule.forRoot()
     // NotificationsModule,
   ],
   providers: [],

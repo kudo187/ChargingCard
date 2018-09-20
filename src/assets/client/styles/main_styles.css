@@ -457,7 +457,7 @@ section
 	display: inline-block;
 	position: relative;
 	min-width: 50px;
-	padding-left: 20px;
+	padding-left: 3px;
 	text-align: center;
 }
 .account > a
@@ -539,7 +539,7 @@ section
 	background: #FFFFFF;
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
-.navbar
+.navbar_content_menu
 {
 	width: auto;
 	height: 100px;

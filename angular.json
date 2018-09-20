@@ -34,7 +34,10 @@
               "node_modules/nouislider/distribute/nouislider.min.css",
               "node_modules/@ng-select/ng-select/themes/default.theme.css",
               "node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+              "node_modules/angular-bootstrap-md/scss/mdb-free.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
@@ -45,7 +48,8 @@
               "node_modules/datatables.net-responsive/js/dataTables.responsive.min.js",
               "node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js",
               "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/hammerjs/hammer.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

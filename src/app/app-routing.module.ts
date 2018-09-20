@@ -8,7 +8,11 @@ import { ManageCardComponent } from './client/manage-card/manage-card.component'
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'login', component: AuthComponent},
-  {path: 'manage-card', component: ManageCardComponent},
+  {
+    path: 'manage-card', 
+    component: ManageCardComponent,
+    loadChildren: './client/manage-card/manage-card.module#ManageCardModule'
+  },
   { path: 'admin', loadChildren: './dashboard/dashboard.module#DashboardModule' },
   { path: 'admin-login', loadChildren: './pages/pages.module#PagesModule' },
   { path: '', component: HomeComponent},
