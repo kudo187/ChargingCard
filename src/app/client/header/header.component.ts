@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,13 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) { }
+  onLoggedin() {
+    localStorage.setItem('isLoggedin', 'true');
+    console.log("aaaa")
+    this.router.navigate(['/manage-profile']);
+  }
+  ngOnInit() {    
     ( function( $ ) {
       $( document ).ready(function() {
       $('#cssmenu li.has-sub>a').on('click', function(){

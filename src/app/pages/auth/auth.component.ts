@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
@@ -8,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class AuthComponent implements OnInit {
 
   toggleFormClass;
-  isSignin; 
-  constructor() { }
+  isSignin;
+  constructor(private router: Router) { }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.isSignin = true;
   }
 
@@ -24,5 +25,8 @@ export class AuthComponent implements OnInit {
     this.toggleFormClass = 'bounceRight';
     this.isSignin = !this.isSignin;
   }
-
+  onLoggedin() {
+    localStorage.setItem('isLoggedin', 'true');
+    this.router.navigate(['/']);
+  }
 }

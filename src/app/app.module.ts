@@ -12,6 +12,8 @@ import { ManageCardComponent } from './client/manage-card/manage-card.component'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { NotificationsModule } from 'projects/angular6-notifications/src/public_api';
 import { OwlModule } from 'ngx-owl-carousel';
+import { ManageProfileComponent } from './client/manage-profile/manage-profile.component';
+import { ClientAuthGuard } from './client/client-auth.guard';
 
 @NgModule({
   declarations: [
@@ -22,16 +24,17 @@ import { OwlModule } from 'ngx-owl-carousel';
     HomeComponent,
     AuthComponent,
     ManageCardComponent,
+    ManageProfileComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
-    OwlModule
+    OwlModule,
     // NotificationsModule,
   ],
-  providers: [],
+  providers: [ClientAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

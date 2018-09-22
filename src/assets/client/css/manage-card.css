@@ -2,6 +2,9 @@
 
 @import url('../fonts/css/font-awesome.min.css');
 
+#containerContent{
+    margin-top: 120px;
+}
 
 
 
@@ -311,7 +314,7 @@ a:focus {
 #cssmenu .bgColor>li>a:hover,
 #cssmenu .bgColor>li.active>a,
 #cssmenu .bgColor>li.open>a {
-    color: #fff;
+    color: fff;
 }
 
 #cssmenu .bgColor>li>ul>li>a:hover {
@@ -549,8 +552,8 @@ a:focus {
 #cssmenu>ul>li>a:hover,
 #cssmenu>ul>li.active>a,
 #cssmenu>ul>li.open>a {
-    color: #e02729;
-    background: #f1f1f1;
+    color: #fff;
+    background: #2c9639e0;
 }
 
 .holder {
@@ -597,6 +600,7 @@ a:focus {
     text-decoration: none;
     font-size: 14px;
     text-transform: none;
+    color: #776e6e;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -661,7 +665,7 @@ a:focus {
 
 #fixedSupport {
     position: fixed;
-    top: 20%;
+    top: 25%;
     right: 0;
     z-index: 9;
 }
@@ -745,6 +749,31 @@ a:focus {
     }
 }
 
+#fixedtotop{
+    position:fixed;
+    right:10px;
+    z-index:10;
+    top:80%;
+}
+.to-top{
+    background:url(../images/icon_top.png) left top no-repeat;
+    display:block;
+    width:58px;
+    height:58px;
+}
+#fixedphao{
+    position:fixed;
+    z-index:9999;
+    top:50px;
+    display:none;
+
+}
+@media (min-width:986px){
+    #fixedphao {
+        display:block;
+    }
+}
+
 
 /* Custom Screen Width change by Case*/
 
@@ -785,3 +814,130 @@ a:focus {
   border-bottom: 2px solid #e02729;
   padding: 10px 0px 5px;
 }
+
+
+/* Card */
+.GoldRecharge .BlockBank ul li a img {max-width: 99.9%;}
+.GoldRecharge {
+    display: block;
+  }
+  .GoldRecharge .BlockBank ul {
+    padding: 10px 0;
+  }  
+  .ListCardBank ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .ListCardBank ul li {
+    float: left;
+  }
+  .ListCardBank ul li a img {
+    border: 1px solid #ececec;
+  }
+  
+  .InfoGoldCharge{display: none; margin-top: 40px;}
+  .InfoGoldCharge .form-group {
+    margin-bottom: 10px;
+  }
+  .InfoGoldCharge .RegNow {
+    display: inline-block;
+  }
+
+  /* sale card */
+  .ColorLighBlue {
+    color: #1ebce9;
+  }
+  
+  .CashRecharge {
+    display: block;
+  }
+  
+  .BlockBank {
+    text-align: center;
+  }
+  .BlockBank .col-md-2, .ListCardBank .col-md-2{margin: 7px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBank .col-md-3, .ListCardBank .col-md-3{margin: 12px 0; padding-left: 11px; padding-right: 11px;}
+  .BlockBank .col-md-4, .ListCardBank .col-md-4{margin: 9px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBank .col-md-5ths, .ListCardBank .col-md-5ths{margin: 0 0 20px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBank .col-md-2 img, .ListCardBank .col-md-2 img{max-width: 100%; width: 116px; height: 64px;}
+  .BlockBank .col-md-4 img, .ListCardBank .col-md-4 img{max-width: 100%; width: 168px; height: 81px;}
+  .BlockBank ul {
+    list-style: none;
+    padding: 10px 30px;
+  }
+  
+  .BlockBank ul li a {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #ccc;
+  }
+  .BlockBank ul li a:focus, .BlockBank ul li a:hover, .BlockBank ul li a.active {
+    border: 1px solid #e02729;
+  }
+  .BlockBank ul li a:focus:after{position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBank ul li a.active:after{ position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBank .lbl{position: absolute; display: block; width: 100%; top: 76%; left: 0; font-size: 28px; text-align: center; color:#f8ac34; font-family:sans-serif;}
+  .BlockBank .gate{top: inherit; bottom: 1%; padding-right: 10px; font-size: 18px; text-align: right; color: #fff; font-weight: bold; text-shadow: 0 1px 0 #000;}
+  .BlockBank .million{bottom: 2%; padding-right: 5px; font-size: 16px;}
+  .BlockBank a:hover{color: inherit;}
+  
+  
+  .BlockBankNew {
+    text-align: center;
+  }
+  .BlockBankNew .col-md-2, .ListCardBank .col-md-2{margin: 7px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBankNew .col-md-3, .ListCardBank .col-md-3{margin: 12px 0; padding-left: 11px; padding-right: 11px;}
+  .BlockBankNew .col-md-4, .ListCardBank .col-md-4{margin: 9px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBankNew .col-md-5ths, .ListCardBank .col-md-5ths{margin: 0 0 20px 0; padding-left: 5px; padding-right: 5px;}
+  .BlockBankNew .col-md-2 img, .ListCardBank .col-md-2 img{max-width: 100%; width: 116px; height: 64px;}
+  .BlockBankNew .col-md-4 img, .ListCardBank .col-md-4 img{max-width: 100%; width: 168px; height: 81px;}
+  .BlockBankNew ul {
+    list-style: none;
+    padding: 10px 30px;
+  }
+  
+  .BlockBankNew ul li a {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #ccc;
+  }
+  .BlockBankNew ul li a:focus, .BlockBankNew ul li a:hover, .BlockBankNew ul li a.active {
+    border: 1px solid #e02729;
+  }
+  .BlockBankNew ul li a:focus:after{position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBankNew ul li a.active:after{ position: absolute; content: ""; top: 0; right: 0; width: 33px; height: 25px; background: url(../images/icon-checked.png) center no-repeat;}
+  .BlockBankNew .lbl{position: absolute; display: block; width: 100%; top: 76%; left: 0; font-size: 28px; text-align: center; color:#f8ac34; font-family:sans-serif;}
+  .BlockBankNew .gate{top: inherit; bottom: 1%; padding-right: 10px; font-size: 18px; text-align: right; color: #fff; font-weight: bold; text-shadow: 0 1px 0 #000;}
+  .BlockBankNew .million{bottom: 2%; padding-right: 5px; font-size: 16px;}
+  .BlockBankNew a:hover{color: inherit;}
+  
+  .InfoBank .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+  
+
+  /* Profile */
+.ColorDo {color: #e02729;
+    font-weight: 700;
+}
+.InfoCurrent .form-horizontal .control-label {
+    font-weight: normal;
+  }
+.RegNow {
+	background: #e02729;
+	padding: 8px 20px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	border: 0;
+}
+.RegNow:hover, .RegNow:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+@media (max-width: 700px){
+    .selectpicker {
+        min-width: 85px;
+    }
+ }

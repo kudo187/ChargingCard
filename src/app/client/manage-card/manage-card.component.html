@@ -51,24 +51,24 @@
               </a>
               <ul>
                 <li>
-                  <a href="../../the-dien-thoai/the-viettel/index.html">
+                  <a routerLink="/home/viettel-card">
                     <img src="../../../assets/client/images/Logo_Mobile/viettel.png"> &nbsp;Thẻ Viettel</a>
                 </li>
                 <li>
-                  <a href="../../the-dien-thoai/the-mobi/index.html">
+                  <a routerLink="/home/mobi-card">
                     <img src="../../../assets/client/images/Logo_Mobile/mobifone.png"> &nbsp;Thẻ Mobifone</a>
                 </li>
                 <li>
-                  <a href="../../the-dien-thoai/the-vina/index.html">
+                  <a routerLink="/home/vina-card">
                     <img src="../../../assets/client/images/Logo_Mobile/vinaphone.png"> &nbsp;Thẻ Vinaphone</a>
                 </li>
                 <li>
-                  <a href="../../the-dien-thoai/the-vietnammobile/index.html">
+                  <a routerLink="/home/vietnam-card">
                     <img src="../../../assets/client/images/Logo_Mobile/vietnam.png"> &nbsp;Thẻ Vietnamobile</a>
                 </li>
                 <li>
-                  <a href="../../the-dien-thoai/the-gmobile/index.html">
-                    <img src="../../../assets/client/images/Logo_Mobile/gmobile.png"> &nbsp;Thẻ Gmoblie</a>
+                  <a routerLink="/home/gmobile-card">
+                    <img src="../../../assets/client/images/Logo_Mobile/gmobile.png"> &nbsp;Thẻ Gmobile</a>
                 </li>
               </ul>
             </li>
@@ -149,35 +149,14 @@
 
         <div class="support-left">
           <p>Chăm sóc khách hàng</p>
-          <p class="mobile" style="font-size:18px;text-transform: lowercase;">19006611 - Ext 4</p>
+          <p class="mobile" style="font-size:18px;text-transform: lowercase;">0965288463 - Ext 4</p>
         </div>
       </div>
       <!-- end SideBarLeft -->
       <div class="blockContent col-md-9">
-        <h3>
-          <span> Giao dịch khách hàng</span>
-        </h3>
-        <div class="clearfix"></div>
-        <div class="clearfix">
-        </div>
-        <div id="guid-tab">
-          <!-- Nav tabs -->
-          <!-- <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active">
-              <a href="#guid-01" aria-controls="home" role="tab" data-toggle="tab">Mua thẻ cào điện thoại</a>
-            </li>
-          </ul> -->
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="guid-01">
-              <div id="wygiwys-editor" style="padding-top: 20px;">
-                <router-outlet></router-outlet>
-              </div>
-            </div>
-          </div>
-        </div>
+        <router-outlet></router-outlet>
+        <!-- endn BlockContent -->
       </div>
-      <!-- endn BlockContent -->
     </div>
   </section>
 </div>

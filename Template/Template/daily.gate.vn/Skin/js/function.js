@@ -1,23 +1,23 @@
 $(document).ready(function(){
 	
 	/* PREVIEW CMND IMAGE UPLOAD */
-	function readURL(input) {
-		if (input.files && input.files[0]) {
-			var reader = new FileReader();
-			reader.onload = function (e) {
-				$(".cmnd-img[rel='" + input.getAttribute("id") + "']").attr("src", e.target.result);
-			}
-			reader.readAsDataURL(input.files[0]);
-		}
-	}
+	// function readURL(input) {
+	// 	if (input.files && input.files[0]) {
+	// 		var reader = new FileReader();
+	// 		reader.onload = function (e) {
+	// 			$(".cmnd-img[rel='" + input.getAttribute("id") + "']").attr("src", e.target.result);
+	// 		}
+	// 		reader.readAsDataURL(input.files[0]);
+	// 	}
+	// }
 	
-	$(".cmnd-input").change(function(){
-		readURL(this);
-	});
+	// $(".cmnd-input").change(function(){
+	// 	readURL(this);
+	// });
 	
-	$(".cmnd-img").click(function(){
-		$("#" + $(this).attr("rel")).click();
-	});
+	// $(".cmnd-img").click(function(){
+	// 	$("#" + $(this).attr("rel")).click();
+	// });
 	/* END OF PREVIEWING CMND IMAGE UPLOAD */
 	
 	/* CLICK CHON NGAN HANG */
@@ -47,34 +47,34 @@ $(document).ready(function(){
 
 	
 	/* CHON/BO TAT CA TOGGLE */
-	$(".table .checkAll").click(function(){
-		if ($(this).prop('checked'))
-			$(this).closest(".table").find(".myCheckbox").prop('checked', true);
-		else
-			$(this).closest(".table").find(".myCheckbox").prop('checked', false);
-	});
+	// $(".table .checkAll").click(function(){
+	// 	if ($(this).prop('checked'))
+	// 		$(this).closest(".table").find(".myCheckbox").prop('checked', true);
+	// 	else
+	// 		$(this).closest(".table").find(".myCheckbox").prop('checked', false);
+	// });
 	
-	$(".table .myCheckbox").click(function(){
-		var myCheckedCheckbox = $(this).closest(".table").find(".myCheckbox:checked");
-		var myCheckbox = $(this).closest(".table").find(".myCheckbox");
-		if (myCheckedCheckbox.length == myCheckbox.length)
-			$(this).closest(".table").find(".checkAll").prop('checked', true);
-		else
-			$(this).closest(".table").find(".checkAll").prop('checked', false);
-	});
+	// $(".table .myCheckbox").click(function(){
+	// 	var myCheckedCheckbox = $(this).closest(".table").find(".myCheckbox:checked");
+	// 	var myCheckbox = $(this).closest(".table").find(".myCheckbox");
+	// 	if (myCheckedCheckbox.length == myCheckbox.length)
+	// 		$(this).closest(".table").find(".checkAll").prop('checked', true);
+	// 	else
+	// 		$(this).closest(".table").find(".checkAll").prop('checked', false);
+	// });
 	
 	/* INIT NICE SCROL */
-	if ($(".transactionBox .list").length != 0)
-		$(".transactionBox .list").niceScroll({cursoropacitymax: 0.4, cursorwidth: 6});
+	// if ($(".transactionBox .list").length != 0)
+	// 	$(".transactionBox .list").niceScroll({cursoropacitymax: 0.4, cursorwidth: 6});
 	/* END */
 	
 	/* DATEPICKER */
-	if ($(".datepicker").length != 0)
-		$(".datepicker").datepicker({
-			autoclose: true,
-			todayBtn: true,
-			language: "vi",
-		});
+	// if ($(".datepicker").length != 0)
+	// 	$(".datepicker").datepicker({
+	// 		autoclose: true,
+	// 		todayBtn: true,
+	// 		language: "vi",
+	// 	});
 	/* END OF DATEPICKER */
 	
 	
@@ -83,24 +83,24 @@ $(document).ready(function(){
 	/* TOOLTIP ENDS */
 	
 	/* SCROLL TO MOBILE CONTENT */
-	$(window).load(function(){
-		if ($(window).width() < 975){
-			if ($(".BlockContent").length != 0){
-				$("html, body").animate({scrollTop: ($(".BlockContent").offset().top - 5)}, 200);
-			}
-		}
-	});
+	// $(window).load(function(){
+	// 	if ($(window).width() < 975){
+	// 		if ($(".BlockContent").length != 0){
+	// 			$("html, body").animate({scrollTop: ($(".BlockContent").offset().top - 5)}, 200);
+	// 		}
+	// 	}
+	// });
     /* END */
 
 
 
 
     //devide detech
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-	    $('body').addClass('smartphone');
-	} else {
-	    $('body').addClass('pc');
-	}
+	// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	//     $('body').addClass('smartphone');
+	// } else {
+	//     $('body').addClass('pc');
+	// }
 
 	//var ToggleMenu = document.querySelector("#toggle-menu-main");
 	//var ToggleMenu1 = document.querySelector(".nav-login-d");
@@ -109,19 +109,19 @@ $(document).ready(function(){
 	//    ToggleMenu1.classList.toggle('on');
     //};
 
-	$("#toggle-menu-main").click(function () {
-	    // $(this).toggleClass('on');
-	    var target = $(this).attr("aria-expanded");
-	    if($(this).attr("aria-expanded") == 'false') {
-	        //$("#" + target).attr("disabled", false);
-	        $(this).addClass('on');
-	    } else {
-	        // $("#" + target).attr("disabled", true);
-	        $(this).removeClass('on');
-	    }
+	// $("#toggle-menu-main").click(function () {
+	//     // $(this).toggleClass('on');
+	//     var target = $(this).attr("aria-expanded");
+	//     if($(this).attr("aria-expanded") == 'false') {
+	//         //$("#" + target).attr("disabled", false);
+	//         $(this).addClass('on');
+	//     } else {
+	//         // $("#" + target).attr("disabled", true);
+	//         $(this).removeClass('on');
+	//     }
 	 
 	   // $('.nav-login-d').toggleClass("on");
-	});
+	// });
 
 	
 	
