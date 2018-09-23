@@ -6,6 +6,8 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { ManageCardComponent } from './client/manage-card/manage-card.component';
 import { ManageProfileComponent } from './client/manage-profile/manage-profile.component';
 import { ClientAuthGuard } from './client/client-auth.guard';
+import { LoginComponent } from './client/login/login.component';
+import { RegisterComponent } from './client/register/register.component';
 
 const routes: Routes = [
   {
@@ -13,7 +15,8 @@ const routes: Routes = [
     loadChildren: './client/manage-card/manage-card.module#ManageCardModule'
   },
 
-  { path: 'login', component: AuthComponent },
+  { path: 'login', component: LoginComponent,},
+  { path: 'register', component: RegisterComponent},
   {
     path: 'manage-profile',
     component: ManageProfileComponent,

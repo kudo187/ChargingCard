@@ -1,0 +1,25 @@
+button.chip{
+    padding: 25px;
+    background: none;
+    border: none;
+
+}
+.chip img{
+    width: 50px;
+    border-radius: 50%;
+}
+.dropdown-menu.text-manage-profile.show {
+    top: -20px;
+    left: 40px;
+}
+a.drprofile.dropdown-item:hover {
+    color: red !important;
+}
+
+.text-manage-profile a{
+    border-bottom: 1px solid #2f3133;
+}
+
+.text-manage-profile a:last-child{
+    border-bottom:none
+}

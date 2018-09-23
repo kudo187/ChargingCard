@@ -8,14 +8,49 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  isLoggin = false;
+  showLogin = false;
+  username;
+  surplus;
   constructor(private router: Router) { }
-  onLoggedin() {
-    localStorage.setItem('isLoggedin', 'true');
-    console.log("aaaa")
-    this.router.navigate(['/manage-profile']);
+
+  ngOnInit() {
+    this.isLogin();
+    this.funJavascript();
+    if(sessionStorage.getItem('cl-isLoggedin'))
+    {
+      this.isLoggin = true;
+      this.username = sessionStorage.getItem('cl-username');
+      this.surplus = sessionStorage.getItem('cl-gold');
+    } 
+    else
+    {
+      this.isLoggin = false;
+    }   
+    
   }
-  ngOnInit() {    
+  
+  isLogin(){
+    if(this.router.url === "/register")
+    {
+      this.showLogin = false;
+    }
+    else{
+      this.showLogin = true;
+    }
+  }
+  
+
+  logOutUser(){
+    sessionStorage.removeItem('cl-gold');
+    sessionStorage.removeItem('cl-username');
+    sessionStorage.removeItem('cl-isLoggedin');
+    this.username = null;
+    this.surplus = null;  
+    this.isLoggin = false;
+    this.router.navigate(['/home']);
+  }
+  funJavascript(){
     ( function( $ ) {
       $( document ).ready(function() {
       $('#cssmenu li.has-sub>a').on('click', function(){
@@ -84,10 +119,5 @@ export class HeaderComponent implements OnInit {
       });
       } )( jQuery );
   }
-  loginFormModalEmail = new FormControl('', Validators.email);
-  loginFormModalPassword = new FormControl('', Validators.required);
-  signupFormModalName = new FormControl('', Validators.required);
-  signupFormModalEmail = new FormControl('', Validators.email);
-  signupFormModalPassword = new FormControl('', Validators.required);
 
 }

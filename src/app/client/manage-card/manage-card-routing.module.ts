@@ -8,7 +8,7 @@ import { BuyVietnamCardComponent } from './buy-vietnam-card/buy-vietnam-card.com
 
 
 const routes: Routes = [
-  { path: '', component: BuyCardsComponent },
+  { path: '', component: CardViettelComponent },
   { path: 'buy-card', component: BuyCardsComponent},
   { path: 'viettel-card', component: CardViettelComponent},
   { path: 'mobi-card', component: BuyMobiCardComponent},

@@ -36,6 +36,7 @@
               "node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/scss/font-awesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
               "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
               "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
               "node_modules/owl.carousel/dist/assets/owl.carousel.css",
@@ -52,7 +53,8 @@
               "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/hammerjs/hammer.min.js",
-              "node_modules/owl.carousel/dist/owl.carousel.js"
+              "node_modules/owl.carousel/dist/owl.carousel.js",
+              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

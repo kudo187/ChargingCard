@@ -14,6 +14,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ManageProfileComponent } from './client/manage-profile/manage-profile.component';
 import { ClientAuthGuard } from './client/client-auth.guard';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './client/login/login.component';
+import { RegisterComponent } from './client/register/register.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { ClientAuthGuard } from './client/client-auth.guard';
     AuthComponent,
     ManageCardComponent,
     ManageProfileComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +37,7 @@ import { ClientAuthGuard } from './client/client-auth.guard';
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     OwlModule,
+    FormsModule
     // NotificationsModule,
   ],
   providers: [ClientAuthGuard],

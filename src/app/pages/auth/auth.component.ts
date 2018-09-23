@@ -26,7 +26,9 @@ export class AuthComponent implements OnInit {
     this.isSignin = !this.isSignin;
   }
   onLoggedin() {
-    localStorage.setItem('isLoggedin', 'true');
+    sessionStorage.setItem('cl-gold','100');
+    sessionStorage.setItem('cl-username','aaa');
+    sessionStorage.setItem('cl-isLoggedin','true');
     this.router.navigate(['/']);
   }
 }
