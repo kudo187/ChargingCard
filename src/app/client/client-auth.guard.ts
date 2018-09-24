@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ClientAuthGuard implements CanActivate {
   constructor(private router: Router){}
   canActivate(){
-    if (localStorage.getItem('cl-isLoggedin')) {
+    if (sessionStorage.getItem('cl-isLoggedin')) {
       return true;
   }
 
