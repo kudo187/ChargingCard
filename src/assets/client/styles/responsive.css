@@ -116,6 +116,10 @@
 
 @media only screen and (max-width: 991px)
 {
+	nav.navbar_content_menu{
+		display: flex;
+		align-items: center;
+	}
 	h1{font-size: 48px;}
 	h2{font-size: 36px;}
 	.main_slider_content h6
@@ -431,17 +435,25 @@
 
 @media only screen and (max-width: 479px)
 {
+	.InfoCurrent label{
+		font-size: 12px;
+	}
 	.logo_container a
 	{
-		font-size: 12px;
+		font-size: 15px;
+	}
+	nav.navbar_content_menu{
+		display: flex;
+		align-items: center;
 	}
 	.hamburger_container
 	{
 		margin-left: 25px;
+		
 	}
 	.hamburger_container i
 	{
-		font-size: 16px;
+		font-size: 25px;
 	}
 	.hamburger_close
 	{
@@ -450,7 +462,7 @@
 	}
 	.hamburger_close i
 	{
-		font-size: 20px;
+		font-size: 30px;
 	}
 	.hamburger_menu_content
 	{
@@ -472,6 +484,7 @@
 		font-size: 12px;
 		line-height: 35px;
 		height: 35px;
+		
 	}
 	.navbar
 	{
@@ -481,118 +494,9 @@
 	{
 		width: 30px;
 		height: 30px;
-		font-size: 12px;
+		font-size: 14px;
 	}
-	.checkout_items
-	{
-		width: 15px;
-		height: 15px;
-		font-size: 10px;		
-	}
-	.main_slider
-	{
-		height: calc(100vh - 70px);
-		/*height: 80vw;*/
-		min-height: auto;
-		margin-top: 70px;
-	}
-	.main_slider_content h6
-	{
-		margin-bottom: 15px;
-	}
-	.main_slider_content h1
-	{
-		font-size: 24px;
-	}
-	.shop_now_button
-	{
-		margin-top: 15px;
-		width: 100px;
-		height: 35px;
-	}
-	.red_button a
-	{
-		font-size: 10px;
-	}
-	.banner_item
-	{
-		height: calc((100vw - 30px) / 2.6);
-	}
-	.grid_sorting_button
-	{
-		font-size: 12px;
-		padding-left: 10px;
-		padding-right: 10px;
-		min-width: 60px;
-		height: 35px;
-	}
-	.product-item
-	{
-		width: 100%;
-		height: auto;
-	}
-	.product
-	{
-		height: auto;
-	}
-	.product_name a
-	{
-		font-size: 12px;
-	}
-	.add_to_cart_button
-	{
-		margin-top: 20px;
-	}
-	.deal_ofthe_week_img
-	{
-		height: 400px;
-	}
-	.timer
-	{
-		margin-top: 42px;
-	}
-	.timer li
-	{
-		width: 50px;
-		height: 50px;
-	}
-	.section_title::after
-	{
-	    top: calc(100% + 8px);
-	    height: 3px;
-	}
-	.timer_num
-	{
-		margin-top: 4px;
-		font-size: 16px;
-	}
-	.timer_unit
-	{
-		margin-top: -9px;
-		font-size: 10px;
-	}
-	.deal_ofthe_week_button
-	{
-		margin-top: 36px;
-	}
-
-	.product_slider_item .product-item
-	{
-		width: 100%;
-		height: auto;
-	}
-	.product_slider_item .product-item:hover::after
-	{
-		box-shadow: none;
-	}
-	.product_slider_item .product-item .product
-	{
-		height: auto;
-	}
-	.product_slider_item .product-item .product_info
-	{
-		padding-bottom: 30px;
-	}
+	
 	.blog_title
 	{
 		font-size: 16px;

@@ -456,7 +456,7 @@ section
 {
 	display: inline-block;
 	position: relative;
-	min-width: 50px;
+	min-width: 160px;
 	padding-left: 25px;
 	text-align: center;
 }
@@ -566,7 +566,8 @@ section
 }
 .navbar_menu li a:hover
 {
-	color: #b5aec4;
+	/* color: #b5aec4; */
+	color: #fe4c50;
 }
 .navbar_user
 {
@@ -599,7 +600,7 @@ section
 }
 .navbar_user li a:hover
 {
-	color: #b5aec4;
+	color: #fe4c50;
 }
 .checkout a
 {
@@ -648,7 +649,7 @@ section
 }
 .hamburger_container:hover i
 {
-	color: #b5aec4;
+	color: #fe4c50;
 }
 .hamburger_menu
 {
@@ -705,7 +706,7 @@ section
 }
 .hamburger_close:hover i
 {
-	color: #b5aec4;
+	color: #fe4c50;
 }
 .hamburger_menu_content
 {
@@ -721,8 +722,10 @@ section
 	border-bottom: solid 1px #b5aec4;
 	vertical-align: middle;
 }
-.menu_item > a
+.menu_item  a
 {
+	margin-left: 20px;
+	text-align: left;
 	display: block;
 	color: #1e1e27;
 	font-weight: 500;
@@ -733,11 +736,13 @@ section
 }
 .menu_item > a:hover
 {
-	color: #b5aec4;
+	color: #fe4c50;
 }
 .menu_item > a > i
 {
-	margin-left: 8px;
+	position: absolute;
+    top: 10px;
+    right: 0;
 }
 .menu_item.active .menu_selection
 {
@@ -752,6 +757,7 @@ section
 	max-height: 0;
 	overflow: hidden;
 	z-index: 1;
+	text-align: left;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
@@ -765,9 +771,9 @@ section
 	line-height: 50px;
 }
 .menu_selection li a
-{
+{	
 	display: block;
-	color: #232530;
+	color: #c00 !important;
 	border-bottom: solid 1px #dddddd;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -777,9 +783,10 @@ section
 	-o-transition: opacity 0.3s ease;
 	transition: all 0.3s ease;
 }
-.menu_selection li a:hover
+.menu_selection li:hover a
 {
-	color: #b5aec4;
+	background: #ff3547;
+	color: #fff !important;
 }
 .menu_selection li:last-child a
 {

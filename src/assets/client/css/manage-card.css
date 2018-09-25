@@ -68,11 +68,14 @@ a:focus {
     outline: none;
 }
 
+.btn.btn-outline-danger:hover {
+    background: red !important;
+    color: #fff !important;
+}
 
 /* ==============================
  *  SideBar Left
  * ============================*/
-
 
 
 #cssmenu .spriteAccountInfo {
@@ -650,6 +653,287 @@ a:focus {
     min-height: 450px;
 }
 
+@media(max-width:991px){
+    *{}
+    #cssmenu .bgColor li{
+        font-size: 14px;
+    } 
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+    .Block2Right {
+      padding: 10px;
+      height: 139px;
+    }
+  
+    .Block1Left {
+      width: 60%;
+      float: left;
+      height: 150px;
+      padding: 10px;
+    }
+  
+    .Block1Right {
+      width: 39%;
+      float: right;
+    }
+  
+    .Block1Sub1 {
+      display: block;
+      width: 100%;
+      margin-bottom: 6px;
+      height: 72px;
+    }
+  
+    .Block2Right {
+      width: 39%;
+      float: right;
+    }
+  
+    .Block2Left {
+      width: 60%;
+    }
+  
+    .Block2Left .BlockSub2 {
+      height: auto;
+    }
+  }
+   .SideBar {
+      display: none;
+    }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+      .gTooltip, #fixedSupport{display: none;}
+      .support-left{display:none;}
+      .BlockBank .lbl{font-size: 24px;}
+      .BlockBank .gate{padding-right: 2px; font-size: 18px;}
+      .Block1Right {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  }
+  
+  @media only screen and (max-width: 480px) {
+      .BlockBank .lbl{font-size: 13px !important;}
+      .BlockBank .gate{font-size: 12px;}
+      .BlockTop1{ margin-bottom:4px;}
+       
+  }
+  
+  @media only screen and (min-width: 768px) {
+      #napthe-block a{ text-align: center;}
+      .navbar-collapse{width: 83.33333333%;}
+      .Block1Right {
+        text-align: center;
+        margin-bottom: 0;
+      }
+  
+    .TopService {
+      float: left;
+    }
+  
+    .SideBar {
+      float: right;
+    }
+  
+    .BlockPaid .BankPaid .BankName {
+      width: 20%;
+    }
+  
+    .Title22 {
+      font-size: 22px;
+    }
+  
+    #footer .BlockFooterAbove .BlockRightFooter .LinkFooter li {
+      display: inline-block;
+    }
+  
+    #topNav li a {
+      font-size: 16px;
+    }
+     
+  }
+  
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 1200px) {
+      .StepRegist li:not(.Current){display: none;}
+  
+  }
+  
+  @media only screen and (max-width: 630px) {
+      .RegDaily{top: 40px; margin-right: 0; clear: both;}
+      .RegisHosline{top: -60px; right: -15px;}
+  }
+  
+  @media only screen and (max-width: 1024px) {
+      .SideBar {width: 100% !important;}
+      .ListAdvertiser{margin-left: 0; padding-left: 0;}
+      .ListAdvertiser img{max-width: 100%; height: auto;}
+      .ListAdvertiser{display: none;}
+  }
+  
+  @media only screen and (min-width: 992px) {
+       #napthe-block{ display: none;}
+      .AccountLogin .avatar img{ margin-top:-10px !important;}
+    .SideBar {
+      width: 245px;
+      display:block;
+    }
+  
+    .SideBar h2.HotNew {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 11px;
+      line-height: 32px;
+    }
+    .SideBar h2.HotNew span {
+      display: inline-block;
+    }
+  
+    ul.ListTopNews {
+      margin-bottom: 0;
+    }
+  
+    ul.ListTopNews li {
+      margin: 5px 0px;
+    }
+  
+    #adsSliderWrapper{position: relative;}
+    #adsSliderWrapper .paginator{position: absolute; bottom: 8px; left: 0; width: 100%; text-align: center;}
+    #adsSliderWrapper .navItem{margin: 0 5px; width: 12px; height: 12px; box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8); background-color: #fff; border-radius: 50%; cursor: pointer;}
+    #adsSliderWrapper .selected{background-color: rgba(181, 181, 181, 0.36); cursor: default;}
+  
+    ul.ListAdvertiser {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0;
+      height: 340px;
+    }
+    ul.ListAdvertiser li {
+      float: left;
+      display: block;
+      display: none;
+    }
+    ul.ListAdvertiser li:first-child{display: block;}
+  
+    .Support {
+      position: absolute;
+      right: 10px;
+      bottom: 0px;
+    }
+  
+    .BlockRightFooter {
+      text-align: right;
+    }
+  
+    .Schedule h3 {
+      float: right;
+      margin-right: 15px;
+    }
+  
+    .OpenWorking {
+      margin-top: 4px;
+      float: right;
+    }
+  
+    .CopyRight p {
+      text-align: left;
+    }
+  
+    .LogoBottom {
+      margin-top: 30px;
+    }
+  
+    .PartnerLogo .ListPartner li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .Block2Right .Icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+  
+    .Block2Left .BlockSub2 .Icon {
+      width: 51px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .BlockTop1, .BlockTop2 {
+      display: inline-block;
+      width: 100%;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  
+    .BlockTop1 {
+      margin-bottom: -5px;
+    }
+  
+    .Block1Sub1 {
+      padding: 15px 10px;
+    }
+  
+    .Block1Left {
+      width: 466px;
+      height: 250px;
+      margin-right: 5px;
+      padding: 20px 80px;
+    }
+  
+    .BlockTop1 .TextLarge, .BlockTop2 .TextLarge {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+  
+    .Block2Left .BlockSub2 .TextLarge {
+      font-size: 18px;
+    }
+  
+    .Block1Right {
+      width: 310px;
+      margin-bottom: 0;
+    }
+  
+    .Block1Right .Block1Sub1 {
+      height: 122px;
+      margin-bottom: 6px;
+    }
+  
+    .Block2Right {
+      width: 310px;
+      height: 250px;
+      padding: 30px;
+    }
+  
+    .Block2Left {
+      width: 468px;
+    }
+  
+    .Block2Left .BlockSub2 {
+      height: 122px;
+      margin: 0px 1px 6px 1px;
+      width: 230px;
+      padding: 15px 10px;
+    }
+  
+    .Block1Sub1 .TextLarge {
+      font-size: 20px;
+    }
+  
+    .Block1Left .Icon {
+      width: 98px;
+      height: auto;
+    }
+  
+    .Block1Right .Icon {
+      width: 51px;
+      height: auto;
+    }
+  }
 
 /*Sidebar support*/
 
@@ -660,7 +944,6 @@ a:focus {
     zoom: 1;
     *display: inline;
 }
-
 
 
 #fixedSupport {
