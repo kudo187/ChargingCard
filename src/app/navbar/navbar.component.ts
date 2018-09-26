@@ -32,6 +32,10 @@ export class NavbarComponent {
     }, 100);
   }
 
+  navbarClick(){
+    console.log("aaa");
+  }
+
   showNavbar = () => {
     setTimeout(() => {
       this.commonService.navbarToggleValue = false;

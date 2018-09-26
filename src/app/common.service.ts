@@ -17,6 +17,7 @@ export class CommonService {
 
   sidebarToggle(): void {
     this.sidebarToggleValue = !this.sidebarToggleValue;
+    console.log("ádnkasdnsajknb");
   }
 
   sidebarMiniToggle(): void {

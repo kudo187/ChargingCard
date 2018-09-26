@@ -1,0 +1,54 @@
+<div class="limiter">
+  <div class="container-login100" style="background-image: url('../../assets/client/images/bg-01.jpg');">
+    <div class="wrap-login100">
+      <form class="login100-form " #loginAdmin = "ngForm" (ngSubmit) = "onLoginAdmin(loginAdmin.value)" >
+        <span class="login100-form-logo">
+          <i class="zmdi zmdi-landscape"></i>
+        </span>
+
+        <span class="login100-form-title pb-5 pt-4">
+          Log in
+        </span>
+        <div class="alert alert-danger" *ngIf="username.invalid && (username.dirty || username.touched)" role="alert">
+            Bạn chưa điền tên đăng nhập!!!
+      </div>
+      <div class="alert alert-danger" *ngIf="userError" role="alert">
+          Tên đăng nhập chưa chính xác!!!
+    </div>
+        <div class="wrap-input100 " >
+          <input class="input100" type="text" #username = "ngModel" required ngModel name="username" placeholder="Username">
+          <span class="focus-input100" data-placeholder="&#xf207;"></span>
+        </div>
+        <div class="alert alert-danger" *ngIf="username.invalid && (username.dirty || username.touched)" role="alert">
+            Bạn chưa điền mật khẩu!!!
+      </div>
+        <div class="alert alert-danger" *ngIf="passError" role="alert">
+            Mật khẩu không chính xác!!!
+      </div>
+        <div class="wrap-input100">
+          <input class="input100" type="password" #pass = "ngModel" ngModel required name="pass" placeholder="Password">
+          <span class="focus-input100" data-placeholder="&#xf191;"></span>
+        </div>
+
+        <div class="contact100-form-checkbox">
+          <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+          <label class="label-checkbox100" for="ckb1">
+            Remember me
+          </label>
+        </div>
+
+        <div class="container-login100-form-btn mb-5">
+          <button [disabled] = "loginAdmin.invalid" class="login100-form-btn">
+            Login
+          </button>
+        </div>
+
+        <!-- <div class="text-center pt-5">
+          <a class="txt1" href="#">
+            Forgot Password?
+          </a>
+        </div> -->
+      </form>
+    </div>
+  </div>
+</div>

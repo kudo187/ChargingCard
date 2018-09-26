@@ -8,6 +8,8 @@ import { ManageProfileComponent } from './client/manage-profile/manage-profile.c
 import { ClientAuthGuard } from './client/client-auth.guard';
 import { LoginComponent } from './client/login/login.component';
 import { RegisterComponent } from './client/register/register.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { AdminAuthGuard } from './auth-admin/admin-auth.guard';
 
 const routes: Routes = [
   {
@@ -23,8 +25,8 @@ const routes: Routes = [
     loadChildren: './client/manage-profile/manage-profile.module#ManageProfileModule',
     canActivate:[ClientAuthGuard]
   },
-  { path: 'admin', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-  { path: 'admin-login', loadChildren: './pages/pages.module#PagesModule' },
+  { path: 'admin', loadChildren: './dashboard/dashboard.module#DashboardModule', canActivate: [AdminAuthGuard] },
+  { path: 'admin-login', component:LoginAdminComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];

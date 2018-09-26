@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './client/header/header.component';
@@ -17,6 +17,8 @@ import { ClientAuthGuard } from './client/client-auth.guard';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './client/login/login.component';
 import { RegisterComponent } from './client/register/register.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { AdminAuthGuard } from './auth-admin/admin-auth.guard';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { RegisterComponent } from './client/register/register.component';
     ManageProfileComponent,
     LoginComponent,
     RegisterComponent,
+    LoginAdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { RegisterComponent } from './client/register/register.component';
     FormsModule
     // NotificationsModule,
   ],
-  providers: [ClientAuthGuard],
+  providers: [ClientAuthGuard,AdminAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

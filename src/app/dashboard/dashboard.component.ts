@@ -12,7 +12,8 @@ import * as NProgress from 'nprogress';
 export class DashboardComponent implements OnInit, AfterViewChecked {
 
   commonService;
-
+  isLogginAdmin = false;
+  userNameAdmin;
   constructor(private router: Router, private cs: CommonService, private renderer: Renderer2) {
     this.commonService = cs;
     NProgress.configure({ showSpinner: false });
@@ -20,6 +21,15 @@ export class DashboardComponent implements OnInit, AfterViewChecked {
   }
 
   ngOnInit() {
+    if(sessionStorage.getItem('cl-isLoggedin'))
+    {
+      this.isLogginAdmin = true;
+      this.userNameAdmin = sessionStorage.getItem('cl-userNameAdmin');
+    } 
+    else
+    {
+      this.isLogginAdmin = false;
+    }   
     this.router.events.subscribe((obj: any) => {
       if (obj instanceof RouteConfigLoadStart) {
         NProgress.start();

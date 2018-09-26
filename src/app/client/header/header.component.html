@@ -30,11 +30,11 @@
                                 </button>
                                 <div class="dropdown-menu text-manage-profile">
                                     <a class="dropdown-item drprofile" routerLink="/manage-profile">
-                                        <i class="fas fa-user mr-2"></i> Thông tin cá nhân</a>
+                                        <i class="fa fa-user mr-2"></i> Thông tin cá nhân</a>
                                     <a class="dropdown-item drprofile" routerLink="/manage-profile/change-password">
-                                        <i class="fas fa-key mr-2"></i>Đổi mật khẩu</a>
+                                        <i class="fa fa-key mr-2"></i>Đổi mật khẩu</a>
                                     <a class="dropdown-item drprofile" (click)="logOutUser()">
-                                        <i class="fas fa-sign-out-alt mr-2"></i> Log out</a>
+                                        <i class="fa fa-sign-out mr-2"></i> Log out</a>
                                 </div>
                             </li>
                             <li *ngIf="!isLoggin" class="account">
@@ -50,6 +50,10 @@
                                     <li>
                                         <a routerLink="/register" (click)="isLogin()">
                                             <i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a routerLink="/register" >
+                                            <i class="zmdi zmdi-arrow-right"></i>Go admin</a>
                                     </li>
                                 </ul>
                             </li>
@@ -94,15 +98,15 @@
                 <ul class="menu_selection text-manage-profile">
                     <li>
                         <a routerLink="/manage-profile">
-                            <i class="fas fa-user mr-2"></i> Thông tin cá nhân</a>
+                            <i class="fa fa-user mr-2"></i> Thông tin cá nhân</a>
                     </li>
                     <li>
                         <a  routerLink="/manage-profile/change-password">
-                            <i class="fas fa-key mr-2"></i>Đổi mật khẩu</a>
+                            <i class="fa fa-key mr-2"></i>Đổi mật khẩu</a>
                     </li>
                     <li>
                         <a (click)="logOutUser()">
-                            <i class="fas fa-sign-out-alt mr-2"></i> Log out</a>
+                            <i class="fa fa-sign-out mr-2"></i> Log out</a>
                     </li>
                 </ul>
             </li>
@@ -119,6 +123,10 @@
                     <li>
                         <a routerLink="/register" (click)="isLogin()">
                             <i class="fa fa-user-plus mr-2 ml-3" aria-hidden="true"></i>Đăng ký</a>
+                    </li>
+                    <li>
+                        <a routerLink="/admin">
+                            <i class="fa fa-user-plus mr-2 ml-3" aria-hidden="true"></i>Go Admin</a>
                     </li>
                 </ul>
             </li>
@@ -138,7 +146,7 @@
         <li *ngIf="!isLoggin">
             <a routerLink="{{showLogin?'/register':'/login'}}" (click)="isLogin()" class="item active">
                 <i class="sprite register ib "></i>
-                <span class="lbl">{{showLogin?'Đăng ký mới':'Đăng nhập'}}</span>
+                <span class="lbl profile">{{showLogin?'Đăng ký mới':'Đăng nhập'}}</span>
             </a>
         </li>
         <li>
